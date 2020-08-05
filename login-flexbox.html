@@ -1,0 +1,160 @@
+<html>
+  <head>
+    <link 
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
+      rel="stylesheet">
+
+    <link 
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" 
+      rel="stylesheet">
+
+
+    <style>
+      html,
+      body {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      }
+
+      .container-fluid {
+        background: url('https://images.pexels.com/photos/1571730/pexels-photo-1571730.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      .col {
+        height: 100vh;
+      }
+
+      #wrapper {
+        background-color: rgba(132, 139, 148, 0.8);
+        border-radius: 20px;
+        box-shadow: 10px 10px 10px 10px  rgb(37, 69, 103);
+        padding: 21px;
+        text-transform: uppercase;
+        width: 300px;
+      }
+
+      h3 {
+        color: #063457;
+        letter-spacing: 1.5;
+        margin-bottom: 21px;
+        text-align: center;
+      }
+
+      .input-group {
+        width: 100%;
+      }
+
+      input,
+      .icon-wrapper {
+        height: 44px;
+
+      }
+
+      .icon-wrapper {
+        align-items: center;
+        background-color:#426da0;;
+        display: flex;
+        justify-content: center;
+        width: 44px;
+      }
+
+      .icon-wrapper i {
+        color: #ccc;
+        font-size: 21px;
+      }
+
+      input {
+        background-color: rgba(70, 103, 107, 0.9);
+        border: none;
+        color: #ccc;
+        margin-bottom: 15px;
+        padding: 9px;
+        width: calc(100% - 44px);
+      }
+
+      input::placeholder {
+        color: #aaa;
+      }
+
+      button {
+        border: solid rgb(75, 69, 69);
+        display: block;
+        letter-spacing: 1.5;
+        margin: 0 auto;
+        margin-bottom: 15px;
+        padding: 9px;
+        text-transform: uppercase;
+        width: 90%;
+      }
+
+      button:hover {
+        background-color: #7a848a;
+      }
+      
+      .button1{border-radius: 30px;}
+
+      #forgot-password {
+        color: #ccc;
+        text-align: center;
+        text-transform: capitalize;
+      }
+
+      #forgot-password span {
+        text-decoration: underline;
+      }
+
+      hr {
+        margin-bottom: 30px;
+        margin-top: 30px;
+      }
+
+      #register-button {
+        background-color: #426da0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- You need a container parent, using `container` or `container-fluid` -->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col d-flex align-items-center justify-content-center">
+          <div id="wrapper">
+            <h3>Member Login</h3>
+
+    <!-- Username -->
+    <div class="input-group">
+      <div class="icon-wrapper">
+        <i class="fa fa-user-circle"></i>
+          </div>
+
+            <input placeholder="Username">
+            </div>
+
+    <!-- Password -->
+      <div class="input-group">
+        <div class="icon-wrapper">
+          <i class="fa fa-lock"></i>
+            </div>
+
+            <input placeholder="Password">
+            </div>
+
+        
+            <button class="d-block">Login</button>
+
+            <p id="forgot-password">Forgot password? 
+              <span>Click here</span>
+            </p>
+
+            <hr>
+
+            <button id="register-button">Register</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
